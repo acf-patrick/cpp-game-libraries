@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\7dc3fb97be826122f7fa46e81efebac1\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{01B04481-D3D7-37CA-843E-73E955D2E665}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

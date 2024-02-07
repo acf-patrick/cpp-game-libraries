@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\422598e34446abbc3ad598707255b872\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{01B04481-D3D7-37CA-843E-73E955D2E665}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

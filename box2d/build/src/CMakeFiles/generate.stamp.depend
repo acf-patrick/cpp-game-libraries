@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/FIT_Apprenti_Vague_006/ECS/libraries/box2d/src/CMakeLists.txt
+D:/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+D:/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake
+D:/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake

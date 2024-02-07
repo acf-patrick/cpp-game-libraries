@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{463BE6A1-E584-3F89-8EFC-91F2E733037B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -P D:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -P D:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -P D:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -P D:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\7dc3fb97be826122f7fa46e81efebac1\generate.stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -SD:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp -BD:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build/YAML_CPP.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\CMakeLists.txt;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeSystem.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\cmake_uninstall.cmake.in;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\util\CMakeLists.txt;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp-config.cmake.in;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp.pc.in;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CTest.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CTestUseLaunchers.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\generate.stamp;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\util\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -SD:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp -BD:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build/YAML_CPP.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\CMakeLists.txt;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeSystem.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\cmake_uninstall.cmake.in;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\util\CMakeLists.txt;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp-config.cmake.in;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp.pc.in;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CTest.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CTestUseLaunchers.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\generate.stamp;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\util\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -SD:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp -BD:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build/YAML_CPP.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\CMakeLists.txt;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeSystem.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\cmake_uninstall.cmake.in;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\util\CMakeLists.txt;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp-config.cmake.in;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp.pc.in;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CTest.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CTestUseLaunchers.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\generate.stamp;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\util\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -SD:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp -BD:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FIT_Apprenti_Vague_006/ECS/libraries/yaml-cpp/build/YAML_CPP.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\CMakeLists.txt;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\3.27.1\CMakeSystem.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\cmake_uninstall.cmake.in;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\util\CMakeLists.txt;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp-config.cmake.in;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp.pc.in;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CTest.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CTestUseLaunchers.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\CMakeFiles\generate.stamp;D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\build\util\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\cmake_uninstall.cmake.in">
+    </None>
+    <None Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\util\CMakeLists.txt">
+    </None>
+    <None Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp-config.cmake.in">
+    </None>
+    <None Include="D:\FIT_Apprenti_Vague_006\ECS\libraries\yaml-cpp\yaml-cpp.pc.in">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
